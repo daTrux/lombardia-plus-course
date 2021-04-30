@@ -1,0 +1,143 @@
+/* Regole per il responsive design */
+
+	* { /* Imposto il box-sizing su tutti gli elementi*/
+		box-sizing: border-box;
+	}
+
+	/* Definisco le 12 colonne */
+	/* Smartphones: */
+	[class*="col-"] {
+		width: 100%;
+	}
+
+	@media only screen and (min-width: 600px) {
+		/* Tablets: */
+		.col-s-1 {width: 8.33%;}
+		.col-s-2 {width: 16.66%;}
+		.col-s-3 {width: 25%;}
+		.col-s-4 {width: 33.33%;}
+		.col-s-5 {width: 41.66%;}
+		.col-s-6 {width: 50%;}
+		.col-s-7 {width: 58.33%;}
+		.col-s-8 {width: 66.66%;}
+		.col-s-9 {width: 75%;}
+		.col-s-10 {width: 83.33%;}
+		.col-s-11 {width: 91.66%;}
+		.col-s-12 {width: 100%;}
+	}
+	
+	@media only screen and (min-width: 768px) {
+		/* Desktop: */
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+	}
+
+	/* Imposto il floating su tutte le 12 colonne */
+	[class*="col-"] {
+		float: left;
+		padding: 1px;
+	}
+
+	/* Dopo ogni riga pulisco il flusso della pagina */
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+		padding-bottom: 10px;
+	}
+
+/* Regole per lo stile della pagina */
+
+	html {
+		width: 100%;
+		max-width: 1280px;
+		margin: 0px auto;
+		font-family: Verdana;
+	}
+
+	.header {
+		background-color: #2290de;
+		color: white;
+		padding: 15px;
+		margin-bottom: 15px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	}
+
+	.content {
+		background-color: lightgrey;
+		padding: 5px;
+	}
+
+	.aside {
+		background-color: #2290de;
+		padding: 5px;
+		height: 100%;
+		text-align: center;
+		color: white;
+	}
+
+	.navLink:link {
+		color: green
+	}
+
+	.navLink:visited {
+		color: darkgreen
+	}
+
+	.navLink:hover {
+		text-decoration: none;
+	}
+
+	a[href="#"]:link {
+		color: red
+	}
+
+	a[href="#"]:visited {
+		color: red
+	}
+
+	a[href="#"]:hover {
+		border-color: red;
+		border-style: dotted;
+		border-width: 1px;
+	}
+
+	h2 {
+		border-bottom-color: black;
+		border-bottom-style: solid;
+		border-bottom-width: 1px; 
+	}
+
+	nav li {
+		list-style-type: lower-greek;
+	}
+
+	.label	{
+		font-weight: bold;
+		font-style: italic;
+		word-wrap: break-word;
+	}
+
+	.squareList {
+		list-style-type: square;
+	    padding-left: 20px;
+	}
+
+	.socialList {
+		list-style-type: none;
+		padding-left: 40px;	
+	}
+
+	.socialList li {
+	    padding-bottom: 40px;	
+	}
