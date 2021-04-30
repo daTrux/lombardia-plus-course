@@ -1,10 +1,10 @@
 # Corso FE Lombardia Plus
 ## Soluzioni agli esercizi proposrti durante la lezione
 Il repository è così suddiviso: 
-  * Lezione 1
+  * Lezione HTML
     * Esercizio 1
     * Esercizio 2
-  * Lezione 2 
+  * Lezione CSS 
     * Esercizio 1
     * Esercizio 2
   * ...
