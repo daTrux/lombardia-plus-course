@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>Form di acquisto</title>
+
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+	<div id=mainContent>
+		<header>
+			<h1>Form di acquisto</h1>
+		</header>
+
+		<form name="acquisto" action="mailto:jhon.doe@test.it" method="post" enctype="text/plain">
+			<section>
+				<header>
+					<h2>Prodotto da acquistare</h2>
+				</header>
+
+				<fieldset id="articolo">
+					<legend>Articolo (obbligatorio)</legend>
+
+					<input type="radio" id="desktop" name="articolo" value="desktop" required>
+					<label for="desktop">
+						<img src="img/desktop.jpg" title="Desktop" alt="Immagine del desktop che si intende acquistare">
+					</label>
+
+					<input type="radio" id="notebook" name="articolo" value="notebook">
+					<label for="notebook">
+						<img src="img/notebook.jpg" title="Notebook" alt="Immagine del notebook che si intende acquistare">
+					</label>
+
+					<input type="radio" id="tablet" name="articolo" value="tablet">
+					<label for="tablet">
+						<img src="img/tablet.jpg" title="Tablet" alt="Immagine del tablet che si intende acquistare">
+					</label>
+				</fieldset>
+				<br>
+
+				<label for="quantita" class="articolo">Quantità (min 1 max 5): </label>
+				<input type="number" id="quantita" name="quantita" min="1" max="5" step="1" required>
+				<br>
+			</section>
+
+			<section>
+				<header>
+					<h2>Indirizzo spedizione</h2>
+				</header>
+
+				<label for="nome" class="spedizione">Nome (obbligatorio): </label>
+				<input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+				<br>
+
+				<label for="cognome" class="spedizione">Cognome (obbligatorio): </label>
+				<input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required>
+				<br>
+
+				<label for="cellulare" class="spedizione">Cellulare (obbligatorio): </label>
+				<input type="tel" id="cellulare" name="cellulare" placeholder="XXX-XXXXXXX" pattern="^\d{3}-\d{7}" required>
+				<br>
+
+				<label for="indirizzo" class="spedizione"> Indirizzo spedizione (obbligatorio): </label>
+				<input type="text" id="indirizzo" name="indirizzo" required>
+				<br>
+
+				<label for="consegna" class="spedizione">Data e ora di consegna: </label>
+				<input type="datetime-local" id="consegna" name="consegna" >
+				<br>
+			</section>
+
+			<section>
+				<header>
+					<h2>Metodo di pagamento</h2>
+				</header>
+
+				<article>
+					<header>
+						<h3>Carta di credito</h3>
+					</header>
+
+					<fieldset id="tipologia">
+						<legend>Tipologia</legend>
+
+						<input type="radio" id="visa" name="tipologia" value="visa" checked>
+						<label for="visa">Visa</label>
+						<br>
+
+						<input type="radio" id="mastercard" name="tipologia" value="mastercard">
+						<label for="mastercard">MasterCard</label>
+						<br>
+
+						<input type="radio" id="americanexpress" name="tipologia" value="americanexpress">
+						<label for="americanexpress">AmericanExpress</label>
+					</fieldset>
+					<br>
+
+					<label for="numero" class="pagamento">Numero: </label>
+					<input type="text" id="numero" name="numero" pattern="^\d{16}" required>
+					<br>
+
+					<label for="cvv" class="pagamento">CVV: </label>
+					<input type="text" id="cvv" name="cvv" pattern="^\d{3}" required>
+					<br>
+					<br>
+				</article>
+			</section>
+
+			<section>
+				<button type="submit" id="submit">
+					<strong>Conferma</strong> l'acquisto
+				</button>
+				<button type="reset" id="reset">
+					<strong>Annulla</strong> l'acquisto
+				</button>
+			</section>
+			
+		</form>
+	</div>
+  </body>
+</html>

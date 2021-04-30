@@ -1,0 +1,85 @@
+body {
+	width: 1280px;
+	margin: 25px auto;
+	background-color: lightgrey;
+	font-family: verdana;
+}
+
+h1 {
+	font-family: Lucida Handwriting;
+	font-size: 48px;
+	background-color: black;
+	color: white;
+}
+
+form {
+	border: 1px solid black;
+	border-radius: 1em;
+	margin: 1em;
+}
+
+section {
+	padding-left: 2em;
+}
+
+section header {
+	margin-left: -1em;
+}
+
+label.articolo {
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+}
+
+label.spedizione {
+	display: inline-block;
+	width: 300px;
+	text-align: right;
+}
+
+label.pagamento {
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+
+fieldset {
+	border-radius: 1em;
+}
+
+fieldset#articolo {
+	width: 950px;
+}
+
+fieldset#tipologia {
+	width: 235px;
+}
+
+input:invalid {
+	border-color: red;
+}
+
+label[for="desktop"], label[for="notebook"], label[for="tablet"] {
+	cursor: pointer;
+}
+
+button {
+	height: 50px;
+	border-radius: 2em;
+	font-style: italic;
+	font-size: 1.2em;
+	margin: 1.2em;
+}
+
+button#submit {
+	background-color: lightgreen;
+}
+
+button#reset {
+	background-color: orange;
+}
+
+#mainContent {
+	background-color: white;
+}
