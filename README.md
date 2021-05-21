@@ -7,5 +7,8 @@ Il repository è così suddiviso:
   * Lezione CSS 
     * Esercizio 1
     * Esercizio 2
-  * ...
-
+ * Lezione JS 
+    * Esercizio 1
+ * Lezione jQuery 
+    * Esercizio 1
+    * Esercizio 2
