@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/questions.js"></script>
+    <script src="js/answers.js"></script>
+    <title>QUIZ</title>
+  </head>
+
+  <body>
+    <div class="centered card w-50">
+      <h3 class="p-3">Quizzone</h3>
+
+      <div class="d-flex justify-content-center">
+        <div id="0" class="dot mr-5 cursor-pointer"></div>
+        <div id="1" class="dot mr-5 cursor-pointer"></div>
+        <div id="2" class="dot mr-5 cursor-pointer"></div>
+        <div id="3" class="dot mr-5 cursor-pointer"></div>
+      </div>
+
+      <div class="question text-center mt-5">
+        <h4 id="question">Domanda</h4>
+      </div>
+      <div class="answers mt-3">
+        <div id="r0" class="cursor-pointer card w-50 mx-auto mb-2 answer">
+          <h5>Risposta 1</h5>
+        </div>
+        <div id="r1" class="cursor-pointer card w-50 mx-auto mb-2 answer">
+          <h5>Risposta 2</h5>
+        </div>
+        <div id="r2" class="cursor-pointer card w-50 mx-auto mb-2 answer">
+          <h5>Risposta 3</h5>
+        </div>
+        <div id="r3" class="cursor-pointer card w-50 mx-auto mb-2 answer">
+          <h5>Risposta 4</h5>
+        </div>
+      </div>
+      <div class="d-flex w-50 mt-3">
+        <button type="button" id="prev-btn" class="btn btn-primary w-50 mx-1">
+            Precedente
+          </button>
+        <button type="button" id="next-btn" class="btn btn-primary w-50 mx-1">
+          Successivo
+        </button>
+       
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/index.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
