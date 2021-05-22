@@ -1,0 +1,26 @@
+.centered {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+.card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.not-completed:hover {
+  background-color: #ccc;
+}
+.color-green {
+  color: #00bf51;
+}
+.width-fit {
+  width: fit-content;
+}
+.completed {
+    background-color: #ccc;
+    text-decoration: line-through;
+}
